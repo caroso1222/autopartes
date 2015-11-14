@@ -58,6 +58,12 @@
 	border-color: #84ffff;
 }
 
+.btn-autopartes:focus {
+	border-color: #84ffff !important;
+	color: #84ffff !important;
+	background-color: transparent !important;
+}
+
 .btn-autopartes-hero {
 	border-color: #84ffff;
 	color: #84ffff;
@@ -84,6 +90,10 @@
 	background: #84ffff;
 	color: #1c2139;
 	border-color: #84ffff;
+}
+
+.main-container{
+	overflow: visible;
 }
 
 .autopartes-strip{
@@ -193,13 +203,18 @@
 }
 
 .industries{
-	z-index: 1;
-	background: #ffffff !important;
-	overflow: visible;
+	z-index: 4;
+	background: #f4f4f4 !important;
+	height: 574px;
+	padding-top: 130px
 }
 
 .industries h1{
 	color: white;
+}
+
+.industries .container{
+	padding-top: 22px;
 }
 
 .industries h6 span{
@@ -220,7 +235,7 @@
 	height: 420px;
 	width: 170%;
 	position: absolute;
-	top: 65px;
+	top: 110;
 	right: -60px;
 
 	background: rgba(32,32,32,1);
@@ -327,6 +342,25 @@
 	-webkit-transform: rotate(-25deg);
 	-moz-transform: rotate(-25deg);
 	transform: rotate(-25deg);
+}
+
+.imgs-brands{
+	padding-top: 120px;
+	width: 80%
+}
+
+.imgs-brands .col-sm-4{
+	padding: 20px;
+}
+
+.brands-1:hover ~ .brands-2{
+	padding: 20px;
+}
+
+.marcas{
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .2s ease;
+	transition: all .2s ease;
 }
 
 /* Media for mobile */
