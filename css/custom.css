@@ -441,9 +441,14 @@ footer.details .logo {
 		height: 570px;
 		width: 170%;
 		position: absolute;
-		top: 25px;
+		top: 44px;
 		right: -60px;
 	}	
+
+	.industries {
+	    height: 635px;
+	    padding-top: 65px;
+	}
 
 	.nav-texts{
 		text-align: left;
