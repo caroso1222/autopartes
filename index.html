@@ -82,7 +82,7 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 
         					<div class="col-md-10 col-sm-9 columns nav-texts">
         						<ul class="menu chat-navbar">
-        							<li><a href="#parts" class="inner-link" target="default">Catálogo </a></li><li><a href="#descriptions" class="inner-link" target="default">Nosotros</a></li><li><a href="#descriptions" class="inner-link " target="default">Chat en línea</a></li>
+        							<li><a href="#parts" class="inner-link" target="default">Catálogo </a></li><li><a href="#descriptions" class="inner-link" target="default">Nosotros</a></li><li><a href="#parts" class="inner-link chat" target="default">Chat en línea</a></li>
         						</ul>
         					</div>
         				</div>
@@ -124,7 +124,7 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
         						<div class="row">
         							<div class="col-md-6 col-sm-9">
         								<h1 class="text-white">Trabajamos con grandes empresas navieras, petroleras y todo tipo de transporte fluvial.</h1>
-        								<a href="#parts" class="btn btn-primary btn-autopartes-negative inner-link" target="default" >Ver industrias</a>
+        								<a href="#industries" class="btn btn-primary btn-autopartes-negative inner-link" target="default" >Ver industrias</a>
         							</div>
         						</div>
         					</div>
@@ -208,7 +208,7 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
         </p>
         <div class = "row">
           <div class = "col-sm-12"> 
-           <a target="_blank" href="#descriptions" class="btn btn-primary btn-autopartes inner-link">Chatea con nosotros</a>
+           <a target="_blank" class="btn btn-primary btn-autopartes inner-link chat">Chatea con nosotros</a>
          </div>
        </div>
      </div>
@@ -507,7 +507,7 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
      Ponemos a tu disposición la información de los más amplios y completos catálogos de repuestos del mundo. No hay referencia que no tengamos. Habla con nuestros asesores.
    </p>
    <img src="img/chat-widget.png" class = "img-hidden" >
-   <a href="#industries" class="btn btn-primary btn-autopartes-negative">Empieza ya</a>
+   <a class="btn btn-primary btn-autopartes-negative chat">Empieza ya</a>
 
  </div>
 
@@ -524,37 +524,35 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 
   <div class = "container">
     <div class = "row">
-      <div class = "col-sm-7 ">
+      <div class = "col-sm-7 col-xs-12">
         <div class = "imgs-brands">
           <div class = "row">
-            <div class = "col-sm-4">
+            <div class = "col-sm-4 col-xs-6">
               <div class = "marcas brands-1">
                 <img src="img/brands-1.jpg">
               </div>
             </div>
-            <div class = "col-sm-4">
+            <div class = "col-sm-4 col-xs-6">
               <div class = "marcas brands-2">
                 <img src="img/brands-2.jpg">
               </div>
             </div>
-            <div class = "col-sm-4">
+            <div class = "col-sm-4 col-xs-6">
               <div class = "marcas brands-3">
                 <img src="img/brands-3.jpg">
               </div>
             </div>
-          </div>
-          <div class = "row">
-            <div class = "col-sm-4">
+            <div class = "col-sm-4 col-xs-6">
               <div class = "marcas brands-4">
                 <img src="img/brands-4.jpg">
               </div>
             </div>
-            <div class = "col-sm-4">
+            <div class = "col-sm-4 col-xs-6">
               <div class = "marcas brands-5">
                 <img src="img/brands-5.jpg">
               </div>
             </div>
-            <div class = "col-sm-4">
+            <div class = "col-sm-4 col-xs-6">
               <div class = "marcas brands-6">
                 <img src="img/brands-6.jpg">
               </div>
@@ -572,7 +570,7 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
          Si estás cansado de esperar días por una cotización, habla con nuestros asesores en nuestro chat en línea y cotizaremos en menos de 10 minutos.
 
        </p>
-       <a href="" class="btn btn-primary">Buscar en el catálogo</a>
+       <a class="btn btn-primary" id = "buscar-btn">Buscar en el catálogo</a>
      </div>
    </div>
  </div>
@@ -602,7 +600,7 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
  <br> Construcción
  <br> Marino
 </p>
-<a target="_blank" href="#descriptions" class="btn btn-primary btn-ver-mas inner-link hidden-xs">Conocer más</a>
+<a target="_blank"  class="btn btn-primary btn-ver-mas inner-link hidden-xs" id ="btn-industrial">Conocer más</a>
 </div>
 
 <div class="col-sm-4">
@@ -617,7 +615,7 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
  <br> Carga líquida
  <br><br>
 </p>
-<a target="_blank" href="#descriptions" class="btn btn-primary btn-ver-mas inner-link hidden-xs">Conocer más</a>
+<a target="_blank" class="btn btn-primary btn-ver-mas inner-link hidden-xs" id ="btn-automotriz">Conocer más</a>
 </div>
 
 <div class="col-sm-4">
@@ -631,7 +629,7 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
  <br> Cosechadoras
  <br><br><br>
 </p>
-<a target="_blank" href="#descriptions" class="btn btn-primary btn-ver-mas inner-link hidden-xs">Conocer más</a>
+<a target="_blank"  class="btn btn-primary btn-ver-mas inner-link hidden-xs" id = "btn-agricola">Conocer más</a>
 </div>
 </div>
 </div>
@@ -646,21 +644,11 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 
 <div class="footer-container">
 
-
-
-
-
-
-
-
-
-
-
   <footer class="details">
    <div class="container">
     <div class="row">
      <div class="col-sm-4">
-      <img alt="logo" class="logo" src="img/logo-dark.png">
+      <img alt="logo" class="logo" src="img/logo-header-dark.png">
       <p>
        Autopartes DG, nace con el ideal de crear un valor diferenciador dentro de un Mercado tan competido a nivel Nacional, contamos con el respaldo, soporte y garantía de fábricas que nos ofrecen más de 45.000 referencias para atender cualquier mercado. 
      </p>
